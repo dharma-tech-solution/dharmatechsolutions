@@ -20,7 +20,7 @@ return(
             </h3>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
-              <div className="bg-[#002699] text-white p-6 rounded-lg shadow-md h-auto max-w-xs">
+              <div className="bg-[#002699] mx-auto text-white p-6 rounded-lg shadow-md h-auto max-w-xs">
                 <div className="flex items-center mb-4">
                   <div className="flex justify-center items-center bg-white rounded-full p-3 ml-auto">
                     <img
@@ -40,9 +40,9 @@ return(
                 </p>
               </div>
 
-              <div className="bg-white p-6 rounded-lg shadow-md h-auto max-w-xs">
+              <div className="bg-white mx-auto p-6 rounded-lg shadow-md h-auto max-w-xs">
                 <div className="flex items-center mb-4">
-                  <div className="flex justify-center items-center bg-[#002699] rounded-full p-3 ml-auto">
+                  <div className="flex justify-center  items-center bg-[#002699] rounded-full p-3 ml-auto">
                     <img
                       alt="app-development-icon"
                       src={AppImg}
@@ -60,7 +60,7 @@ return(
                 </p>
               </div>
 
-              <div className="bg-white p-6 rounded-lg shadow-md h-auto max-w-xs">
+              <div className="bg-white mx-auto p-6 rounded-lg shadow-md h-auto max-w-xs">
                 <div className="flex items-center mb-4">
                   <div className="flex justify-center items-center bg-[#002699] rounded-full p-3 ml-auto">
                     <img
@@ -80,7 +80,7 @@ return(
                 </p>
               </div>
 
-              <div className="bg-white p-6 rounded-lg shadow-md h-auto max-w-xs">
+              <div className="bg-white mx-auto p-6 rounded-lg shadow-md h-auto max-w-xs">
                 <div className="flex items-center mb-4">
                   <div className="flex justify-center items-center bg-[#002699] rounded-full p-3 ml-auto">
                     <img
@@ -100,7 +100,7 @@ return(
                 </p>
               </div>
 
-              <div className="bg-white p-6 rounded-lg shadow-md h-auto max-w-xs">
+              <div className="bg-white mx-auto p-6 rounded-lg shadow-md h-auto max-w-xs">
                 <div className="flex items-center mb-4">
                   <div className="flex justify-center items-center bg-[#002699] rounded-full p-3 ml-auto">
                     <img
@@ -120,7 +120,7 @@ return(
                 </p>
               </div>
 
-              <div className="bg-white  p-6 rounded-lg shadow-md h-auto max-w-xs">
+              <div className="bg-white mx-auto  p-6 rounded-lg shadow-md h-auto max-w-xs">
                 <div className="flex items-center mb-4">
                   <div className="flex justify-center items-center bg-[#002699] rounded-full p-3 ml-auto">
                     <img

@@ -42,11 +42,11 @@ Meet The Team
             Skills to Deliver Excellence
             </h3>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ml-2 md:ml-10 ">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ml-2 md:ml-0 ">
                 {
                     arr.map((item,index)=>{
                         return(
-                            <div key={index} className=" text-black p-6 rounded-lg  h-auto max-w-xs">
+                            <div key={index} className=" text-black p-6 mx-auto rounded-lg  h-auto max-w-xs">
                 <div className="flex items-center">
                   <div className="mx-auto  rounded-full p-3">
                     <img

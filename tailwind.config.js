@@ -11,6 +11,7 @@ export default {
         'background-2': "url('src/assets/ImageAndIcons/dharmalogobg.png')",
         'background-3': "url('src/assets/ImageAndIcons/homeIMG.png')",
         'background-4': "url('src/assets/ImageAndIcons/allprojectbg.png')",
+        'background-5': "url('src/assets/services/services.png')",
       }
     },
   },

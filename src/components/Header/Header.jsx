@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import LogoImg from "../../assets/ImageAndIcons/logo.png";
 
+
 function Header() {
+  
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
@@ -64,7 +66,7 @@ function Header() {
               About Us
             </a>
             <a
-              href="#"
+              href="/services"
               className="hover:bg-black hover:text-white py-1 px-2 text-black rounded-2xl"
             >
               Services
@@ -82,7 +84,7 @@ function Header() {
               Team
             </a>
             <a
-              href="#"
+              href="/contact"
               className="hover:bg-black hover:text-white py-1 px-2 text-black rounded-2xl"
             >
               Contact
@@ -122,7 +124,7 @@ function Header() {
               About Us
             </a>
             <a
-              href="#"
+              href="/services"
               className="hover:bg-black hover:text-white py-2 px-4 text-black rounded-2xl"
             >
               Services
@@ -140,7 +142,7 @@ function Header() {
               Team
             </a>
             <a
-              href="#"
+              href="/contact"
               className="hover:bg-black hover:text-white py-2 px-4 text-black rounded-2xl"
             >
               Contact

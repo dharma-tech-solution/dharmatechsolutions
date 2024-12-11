@@ -9,6 +9,8 @@ import AllProjects from './pages/AllProjects';
 import FullTeam from './pages/FullTeam';
 import UrbonStudio from './pages/UrbonStudio';
 import Jassica from './pages/Jassica';
+import Services from './pages/Services';
+import ContactUs from './pages/ContactUs';
 export default function Widget() {
   return (
     <Router>
@@ -22,6 +24,8 @@ export default function Widget() {
       <Route path="/petcare" element={<Petcare_deatails/>} />
       <Route path="/urban" element={<UrbonStudio/>} />
       <Route path="/jessica" element={<Jassica/>} />
+      <Route path="/services" element={<Services/>} />
+      <Route path="/contact" element={<ContactUs/>} />
         </Routes>
         <Fotter />
     </Router>

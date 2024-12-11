@@ -25,10 +25,10 @@ function Fotterr() {
         <ul className="list-disc text-sm ml-5">
           <li className="mt-2 hover:underline cursor-pointer" onClick={()=>window.location.href="/"}>Home</li>
           <li className="mt-2 hover:underline cursor-pointer" onClick={()=>window.location.href="/about"}>About Us</li>
-          <li className="mt-2 hover:underline cursor-pointer" onClick={()=>window.location.href=""}>Services</li>
+          <li className="mt-2 hover:underline cursor-pointer" onClick={()=>window.location.href="/services"}>Services</li>
           <li className="mt-2 hover:underline cursor-pointer" onClick={()=>window.location.href="/allprojects"}>Portfolio</li>
           <li className="mt-2 hover:underline cursor-pointer" onClick={()=>window.location.href="/team"}>Team</li>
-          <li className="mt-2 hover:underline cursor-pointer" onClick={()=>window.location.href="/"}>Contact</li>
+          <li className="mt-2 hover:underline cursor-pointer" onClick={()=>window.location.href="/contact"}>Contact</li>
         </ul>
       </div>
 

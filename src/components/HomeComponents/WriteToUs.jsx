@@ -3,7 +3,7 @@ import { MdOutlineMail } from "react-icons/md";
 import { Ri24HoursFill } from "react-icons/ri";
 function WriteToUs() {
   return (
-    <div className="bg-white p-6 rounded-lg w-full">
+    <div className="bg-white p-6 rounded-lg w-full mt-10">
     <h1 className="font-bold text-xl md:text-3xl text-left ml-10">Write To Us Anytime</h1>
   
     <div className="p-4 flex flex-col items-center gap-5 md:flex-row md:items-start md:gap-8 md:p-8">
