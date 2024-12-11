@@ -1,4 +1,4 @@
-import GroupImg from "../assets/ImageAndIcons/group2.png";
+
 import MemberImg from "../assets/ImageAndIcons/member.png";
 import WhatWeProvide from "../components/HomeComponents/WhatWeProvide";
 import LatestPorject from "../components/HomeComponents/LatestProject";
