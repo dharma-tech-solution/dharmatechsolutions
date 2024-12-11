@@ -1,9 +1,28 @@
 import React, { useState } from "react";
 import LogoImg from "../../assets/ImageAndIcons/logo.png";
-
-
+import { useNavigate } from "react-router-dom";
 function Header() {
-  
+  const navigate=useNavigate()
+  function redirect(id){
+if(id==1){
+  navigate('/')
+}
+else if(id==2){
+  navigate('/about')
+}
+else if(id==3){
+  navigate('/services')
+}
+else if(id==4){
+  navigate('/allprojects')
+}
+else if(id==5){
+  navigate('/team')
+}
+else if(id==6){
+  navigate('/contact')
+}
+  }
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
@@ -49,42 +68,42 @@ function Header() {
       <div className="bg-white rounded-xl shadow-lg p-4">
         <nav className="flex items-center justify-between p-2 bg-white mb-4">
           <div>
-            <img src={LogoImg} alt="Logo" className="w-32 cursor-pointer" onClick={()=>window.location.href="/"} />
+            <img src={LogoImg} alt="Logo" className="w-32 cursor-pointer" onClick={()=>redirect(1)} />
           </div>
 
           <div className="flex justify-center mx-auto text-xs items-center space-x-6 hidden lg:flex">
             <a
-              href="/"
+              onClick={()=>redirect(1)}
               className="hover:bg-black hover:text-white py-1 px-2 text-black rounded-2xl"
             >
               Home
             </a>
             <a
-              href="/about"
+              onClick={()=>redirect(2)}
               className="hover:bg-black hover:text-white py-1 px-2 text-black rounded-2xl"
             >
               About Us
             </a>
             <a
-              href="/services"
+              onClick={()=>redirect(3)}
               className="hover:bg-black hover:text-white py-1 px-2 text-black rounded-2xl"
             >
               Services
             </a>
             <a
-              href="/allprojects"
+              onClick={()=>redirect(4)}
               className="hover:bg-black hover:text-white py-1 px-2 text-black rounded-2xl"
             >
               Portfolio
             </a>
             <a
-              href="/team"
+              onClick={()=>redirect(5)}
               className="hover:bg-black hover:text-white py-1 px-2 text-black rounded-2xl"
             >
               Team
             </a>
             <a
-              href="/contact"
+              onClick={()=>redirect(6)}
               className="hover:bg-black hover:text-white py-1 px-2 text-black rounded-2xl"
             >
               Contact
@@ -112,37 +131,37 @@ function Header() {
         {isMenuOpen && (
           <div className="lg:hidden flex flex-col items-center space-y-4">
             <a
-              href="/"
+              onClick={()=>redirect(1)}
               className="hover:bg-black hover:text-white py-2 px-4 text-black rounded-2xl"
             >
               Home
             </a>
             <a
-              href="/about"
+              onClick={()=>redirect(2)}
               className="hover:bg-black hover:text-white py-2 px-4 text-black rounded-2xl"
             >
               About Us
             </a>
             <a
-              href="/services"
+              onClick={()=>redirect(3)}
               className="hover:bg-black hover:text-white py-2 px-4 text-black rounded-2xl"
             >
               Services
             </a>
             <a
-              href="/allprojects"
+              onClick={()=>redirect(4)}
               className="hover:bg-black hover:text-white py-2 px-4 text-black rounded-2xl"
             >
               Portfolio
             </a>
             <a
-              href="/team"
+              onClick={()=>redirect(5)}
               className="hover:bg-black hover:text-white py-2 px-4 text-black rounded-2xl"
             >
               Team
             </a>
             <a
-              href="/contact"
+              onClick={()=>redirect(6)}
               className="hover:bg-black hover:text-white py-2 px-4 text-black rounded-2xl"
             >
               Contact

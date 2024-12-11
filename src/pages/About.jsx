@@ -5,7 +5,9 @@ import WhatWeProvide from "../components/HomeComponents/WhatWeProvide"
 import Team from "../components/AboutUsComponent/Team"
 import Blackbanner from "../components/HomeComponents/Blackbanner"
 import WriteToUs from "../components/HomeComponents/WriteToUs"
+
 function About(){
+    
     return(
        <div className="p-5">
         <div className="p-8 w-full border-2 border-slate-900 rounded-lg h-[640px] bg-cover bg-center bg-background-1 ">

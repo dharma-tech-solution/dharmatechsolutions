@@ -3,9 +3,12 @@ import UrbanStudio from "../../assets/ImageAndIcons/urbanStudioIMG.png";
 import JesicaFlat from "../../assets/ImageAndIcons/jasicaflatIMG.png";
 import SolarCRM from "../../assets/ImageAndIcons/solarCRmIMG.png";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 function LatestPorject() {
+  const navigate=useNavigate()
   function redirect(link){
-    window.location.href=link
+    navigate(link)
   }
  
   const arrWeb = [
@@ -217,7 +220,7 @@ if(id==4){
   )
 }
 if(id==5){
-  window.location.href="/allprojects"
+  navigate("/allprojects")
 }
   }
   const [divs,setDiv]=useState(<div className=" flex p-6 w-full flex-wrap mt-6">

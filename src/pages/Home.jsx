@@ -5,8 +5,29 @@ import LatestPorject from "../components/HomeComponents/LatestProject";
 import WhyWorkWithUs from "../components/HomeComponents/WhyWorkWithUs";
 import Reviews from "../components/HomeComponents/Reviews";
 import WriteToUs from "../components/HomeComponents/WriteToUs";
-
+import { useNavigate } from "react-router-dom";
 function Home(){
+  const navigate=useNavigate()
+  function redirect(id){
+if(id==1){
+  navigate('/')
+}
+else if(id==2){
+  navigate('/about')
+}
+else if(id==3){
+  navigate('/services')
+}
+else if(id==4){
+  navigate('/allprojects')
+}
+else if(id==5){
+  navigate('/team')
+}
+else if(id==6){
+  navigate('/contact')
+}
+  }
 return (
     <>
       
@@ -25,7 +46,7 @@ return (
                 <h1 className="font-sans font-bold text-nowrap text-3xl md:text-6xl mt-2">Futures <span className="text-[#3B5EE9]">Together</span></h1>
                 <h1 className="text-xs mt-5 text-center">Empowering Businesses with Scalable, Future-Ready Web, App, ERP, & CRM Solutions – Crafted for </h1>
                   <h1 className="text-xs text-center"> Excellence and Designed to Drive Results in a Dynamic Digital Landscape.</h1>
-                  <button className="bg-black text-white px-4 py-1 mt-3 text-sm rounded-md mb-2" onClick={()=>window.location.href="/allprojects"}>Explore Our Work</button>
+                  <button className="bg-black text-white px-4 py-1 mt-3 text-sm rounded-md mb-2" onClick={()=>redirect(4)}>Explore Our Work</button>
             </div>
             </div>
         {/* <div className="bg-[#EDF2FF] rounded-2xl p-6">
@@ -101,10 +122,10 @@ return (
             </p>
             <div class="flex justify-center items-center ">
               <div class="flex space-x-4">
-                <button class="bg-black text-white px-3 py-1 rounded text-sm">
+                <button onClick={()=>redirect(2)} class="bg-black text-white px-3 py-1 rounded text-sm">
                   Read More
                 </button>
-                <button class="border border-black px-3 py-1 rounded text-sm">
+                <button onClick={()=>redirect(5)} class="border border-black px-3 py-1 rounded text-sm">
                   Meet Dhara Team
                 </button>
               </div>

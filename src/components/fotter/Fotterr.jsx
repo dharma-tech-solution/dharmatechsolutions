@@ -4,8 +4,31 @@ import { MdOutlineMail } from "react-icons/md";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
+
 
 function Fotterr() {
+  const navigate=useNavigate()
+  function redirect(id){
+if(id==1){
+  navigate('/')
+}
+else if(id==2){
+  navigate('/about')
+}
+else if(id==3){
+  navigate('/services')
+}
+else if(id==4){
+  navigate('/allprojects')
+}
+else if(id==5){
+  navigate('/team')
+}
+else if(id==6){
+  navigate('/contact')
+}
+  }
   return (
     <div className="bg-black text-white flex flex-wrap pb-4">
       <div className="p-6 w-full md:w-1/4">
@@ -23,12 +46,12 @@ function Fotterr() {
       <div className="p-6 w-full md:w-1/4 mt-5 md:mt-0">
         <h1 className="text-[#0040FF] text-lg font-bold mb-3">Company</h1>
         <ul className="list-disc text-sm ml-5">
-          <li className="mt-2 hover:underline cursor-pointer" onClick={()=>window.location.href="/"}>Home</li>
-          <li className="mt-2 hover:underline cursor-pointer" onClick={()=>window.location.href="/about"}>About Us</li>
-          <li className="mt-2 hover:underline cursor-pointer" onClick={()=>window.location.href="/services"}>Services</li>
-          <li className="mt-2 hover:underline cursor-pointer" onClick={()=>window.location.href="/allprojects"}>Portfolio</li>
-          <li className="mt-2 hover:underline cursor-pointer" onClick={()=>window.location.href="/team"}>Team</li>
-          <li className="mt-2 hover:underline cursor-pointer" onClick={()=>window.location.href="/contact"}>Contact</li>
+          <li className="mt-2 hover:underline cursor-pointer" onClick={()=>redirect(1)}>Home</li>
+          <li className="mt-2 hover:underline cursor-pointer" onClick={()=>redirect(2)}>About Us</li>
+          <li className="mt-2 hover:underline cursor-pointer" onClick={()=>redirect(3)}>Services</li>
+          <li className="mt-2 hover:underline cursor-pointer" onClick={()=>redirect(4)}>Portfolio</li>
+          <li className="mt-2 hover:underline cursor-pointer" onClick={()=>redirect(5)}>Team</li>
+          <li className="mt-2 hover:underline cursor-pointer" onClick={()=>redirect(6)}>Contact</li>
         </ul>
       </div>
 

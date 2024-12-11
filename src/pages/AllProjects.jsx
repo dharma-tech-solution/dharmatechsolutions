@@ -5,9 +5,11 @@ import JesicaFlat from "../assets/ImageAndIcons/jasicaflatIMG.png";
 import SolarCRM from "../assets/ImageAndIcons/solarCRmIMG.png";
 import { useState } from "react";
 import WriteToUs from "../components/HomeComponents/WriteToUs";
+import { useNavigate } from "react-router-dom";
 function AllProjects(){
+  const navigate=useNavigate()
   function redirect(link){
-    window.location.href=link
+    navigate(link)
   }
   const arrWeb = [
     {

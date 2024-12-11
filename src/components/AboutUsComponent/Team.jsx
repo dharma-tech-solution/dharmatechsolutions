@@ -2,7 +2,9 @@ import naman from "../../assets/ImageAndIcons/NAMAN.png"
 import DEVANSHU from "../../assets/ImageAndIcons/DEVANSHU.png"
 import MAYANK from "../../assets/ImageAndIcons/MAYANK.png"
 import social from "../../assets/ImageAndIcons/socialmedia.png"
+import { useNavigate } from "react-router-dom"
 function Team(){
+    const navigate=useNavigate()
     const arr=[
         {
             img:naman,
@@ -79,7 +81,7 @@ Meet The Team
               
             </div>
             <div className="w-full h-10">
-                <button onClick={()=>window.location.href="/team"} className="bg-black float-end mr-10 text-white p-2 font-semibold rounded-xl">View Team</button>
+                <button onClick={()=>navigate("/team")} className="bg-black float-end mr-10 text-white p-2 font-semibold rounded-xl">View Team</button>
 
             </div>
 
