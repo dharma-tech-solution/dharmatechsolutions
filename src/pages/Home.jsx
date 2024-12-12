@@ -91,9 +91,9 @@ return (
                 Bringing expertise and dedication to every project we deliver.
               </p>
             </div>
-            <div className="bg-card p-6 rounded-lg shadow-lg md:min-h-0 min-h-[195px] h-fit sm:w-1/2 md:w-1/3 lg:w-4/5">
+            <div className="bg-card p-6 rounded-lg shadow-lg sm:w-1/2 md:w-1/3 lg:w-4/5">
               <h2 className="text-3xl md:text-5xl font-bold text-foreground">4+</h2>
-              <p className="font-bold  md:text-xl mt-2 text-xs mb-2 text-nowrap">Industry Awards Won</p>
+              <p className="font-bold  md:text-xl mt-2 text-xs mb-2 ">Industry Awards Won</p>
               <p className="text-xs">
                 Proudly recognized for our excellence and innovation.
               </p>
@@ -101,7 +101,7 @@ return (
             <div className="bg-card p-6 rounded-lg shadow-lg h-fit sm:w-1/2 md:w-1/3 lg:w-4/5">
               <h2 className="text-3xl md:text-5xl font-bold text-foreground">10+</h2>
               <p className="font-bold  md:text-xl mt-2 text-xs mb-2 ">Skilled Experts on Team</p>
-              <p className="text-xs text-wrap">
+              <p className="text-xs ">
                 A team of experts committed to driving your success.
               </p>
             </div>

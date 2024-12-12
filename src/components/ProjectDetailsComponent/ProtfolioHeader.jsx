@@ -31,7 +31,7 @@ const PetcareSection = (props) => {
       </div>
 
       {/* Background Image Section */}
-      <div className="w-full flex items-center justify-center mt-10">
+      <div className="w-full flex  items-center justify-center mt-10">
         <img
           className="w-full max-w-4xl mx-auto object-cover"
           src={props.sreen_banner}
