@@ -10,12 +10,15 @@ function About(){
     
     return(
        <div className="p-5">
-        <div className="p-8 w-full border-2 border-slate-900 rounded-lg h-[640px] bg-cover bg-center bg-background-1 ">
+        <div className="p-8 w-full border-2 border-slate-900 rounded-lg h-96 md:h-[640px] bg-cover bg-center bg-background-1 ">
         <div className= "mt-48 w-full md:w-1/2">
         <h1 className="font-bold text-white text-3xl">About Us</h1>
-        <h1 className=" text-white mt-2 text-sm md:text-lg text-wrap">At Dharma Tech Solution, we are a passionate and skilled team of software engineers dedicated to creating high-quality, innovative, and user-focused solutions tailored to meet each client’s unique needs. Our diverse expertise spans across frontend development, full-stack engineering, UI/UX design, and data analysis, allowing us to deliver holistic and seamless digital experiences. We collaborate with creativity and precision, ensuring that every project reflects our commitment to excellence. With a customer-first approach, we work to turn your ideas into impactful digital solutions that drive success and inspire growth. Partner with us to bring your vision to life, backed by a team you can trust</h1>
+        <h1 className=" text-white md:hidden block mt-2 text-sm md:text-lg text-wrap">Inovating Today, Shinning Tomorrow</h1>
+        <h1 className=" text-white hidden md:block mt-2 text-sm md:text-lg text-wrap">At Dharma Tech Solution, we are a passionate and skilled team of software engineers dedicated to creating high-quality, innovative, and user-focused solutions tailored to meet each client’s unique needs. Our diverse expertise spans across frontend development, full-stack engineering, UI/UX design, and data analysis, allowing us to deliver holistic and seamless digital experiences. We collaborate with creativity and precision, ensuring that every project reflects our commitment to excellence. With a customer-first approach, we work to turn your ideas into impactful digital solutions that drive success and inspire growth. Partner with us to bring your vision to life, backed by a team you can trust</h1>
         </div>
         </div>
+        <h1 className=" text-black p-2 md:hidden block mt-2 text-sm md:text-lg text-wrap">At Dharma Tech Solution, we are a passionate and skilled team of software engineers dedicated to creating high-quality, innovative, and user-focused solutions tailored to meet each client’s unique needs. Our diverse expertise spans across frontend development, full-stack engineering, UI/UX design, and data analysis, allowing us to deliver holistic and seamless digital experiences. We collaborate with creativity and precision, ensuring that every project reflects our commitment to excellence. With a customer-first approach, we work to turn your ideas into impactful digital solutions that drive success and inspire growth. Partner with us to bring your vision to life, backed by a team you can trust</h1>
+        
         <div className=" mt-10 rounded-xl p-10 bg-[#EDF2FF] w-full ">
             <div className="block md:flex">
             <div className="mt-0 md:mt-28 w-full md:w-2/5">
@@ -49,7 +52,7 @@ function About(){
                 <h1 className="font-bold text-2xl">Values</h1>
                 <h1 className=" mt-2 text-sm md:text-xl md:text-wrap md:mb-0 mb-10">At Dharma Tech Solution, our values guide every step of our journey. We are committed to innovation, client satisfaction, and delivering excellence in every project we undertake. By fostering trust, transparency, and a passion for creativity, we ensure that our solutions not only meet but exceed expectations, creating lasting relationships with our clients</h1>
             </div>
-            <div className=" float-start md:float-end mx-auto rounded-xl w-full md:w-3/5 h-fit">
+            <div className=" float-start md:float-end mx-auto rounded-xl w-full md:w-3/5 h-fit md:mb-0 mb-10">
                 <img 
                 className="float-start md:float-end mx-auto rounded-xl w-full md:w-3/5 h-fit"
                 src={img3}

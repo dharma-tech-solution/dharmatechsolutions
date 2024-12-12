@@ -9,8 +9,8 @@ function ContactUs(){
             <div className="w-full h-full p-3 block md:flex space-x-0 md:space-x-2">
                     <div className="w-full md:w-4/6  p-2">
 
-                    <h1 className="text-4xl font-semibold mt-3 text-center">Get in Touch with Us</h1>
-                    <form className="mt-20 p-10 ">
+                    <h1 className="text-2xl md:text-4xl font-semibold mt-3 text-center">Get in Touch with Us</h1>
+                    <form className="mt-3 md:mt-20 p-2 md:p-10 ">
                         <div className="flex flex-col  space-y-2">
                         <label className="text-xl font-semibold">Your Name</label>
                         <input type="text" name='name' placeholder="Enter Your Full Name" 
@@ -63,14 +63,14 @@ function ContactUs(){
                         />
                         </div>
 
-                        <div className="flex space-x-3 mt-10">
+                        <div className="flex space-x-3 mt-10 md:justify-start justify-center">
                         <button className="px-8 py-3 rounded-md text-white bg-blue-600">Submit</button>
                         <button className="px-8 py-3 rounded-md text-white bg-slate-600">Reset</button>
                         
                         </div>
                     </form>
                     </div>
-                    <div className="w-full md:w-2/6 p-3">
+                    <div className="w-full md:w-2/6 p-3 hidden md:block">
                     <img 
                     src={dharma}
                     className="w-full rounded-full mt-2"

@@ -44,7 +44,7 @@ function Reviews() {
   ];
   return (
     <>
-      <div className="flex p-6  w-full flex-wrap justify-center items-center">
+      <div className="hidden md:flex p-6  w-full flex-wrap justify-center items-center">
         {arr.map((item, index) => {
           return (
             <div key={index} className="flex justify-center items-center">

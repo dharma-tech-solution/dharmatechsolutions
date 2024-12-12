@@ -32,8 +32,8 @@ return (
     <>
       
         <div className="overflow-hidden">
-          <div className="bg-background-3 w-full h-[450px] bg-center bg-cover "></div>
-          <div className="w-full h-full -mt-64 flex justify-center p-3 md:p-0  ">
+          <div className={"bg-background-3 w-full h-[450px] bg-center bg-cover "}></div>
+          <div className="w-full h-full -mt-80 md:-mt-64 flex justify-start md:justify-center p-3 md:p-0  ">
           <div className="w-full md:w-[870px] h-full md:h-[450px]   border-2 flex flex-col items-center justify-center  border-slate-900 rounded-full ">
           <div className="flex  justify-center mt-2">
                   <span className="flex  text-xs text-muted-foreground">
@@ -76,43 +76,43 @@ return (
           </div>
         </div> */}
         <div>
-          <div className="flex flex-wrap justify-between p-10 gap-1">
-            <div className="bg-card p-6 rounded-lg shadow-lg  sm:w-1/2 md:w-1/3 lg:w-1/5">
-              <h2 className="text-4xl  text-foreground">1K</h2>
-              <p className="font-bold">Satisfied Clients</p>
+          <div className="mt-10 grid grid-cols-2 md:grid-cols-4 h-auto justify-between p-10 gap-1">
+            <div className="bg-card p-6 rounded-lg shadow-lg  sm:w-1/2 md:w-1/3 lg:w-4/5">
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground">1K</h2>
+              <p className="font-bold md:text-xl mt-2 text-xs mb-2 text-nowrap">Satisfied Clients</p>
               <p className="text-xs">
                 Empowering over a thousand clients with reliable solutions.
               </p>
             </div>
-            <div className="bg-card p-6 rounded-lg shadow-lg sm:w-1/2 md:w-1/4 lg:w-1/5">
-              <h2 className="text-4xl text-foreground">40+</h2>
-              <p className="font-bold">Successful Projects</p>
+            <div className="bg-card p-6 rounded-lg shadow-lg h-fit sm:w-1/2 md:w-1/3 lg:w-4/5">
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground">40+</h2>
+              <p className="font-bold  md:text-xl mt-2 text-xs mb-2 text-nowrap">Successful Projects</p>
               <p className="text-xs">
                 Bringing expertise and dedication to every project we deliver.
               </p>
             </div>
-            <div className="bg-card p-6 rounded-lg shadow-lg sm:w-1/2 md:w-1/4 lg:w-1/5">
-              <h2 className="text-5xl text-foreground">4+</h2>
-              <p className="font-bold">Industry Awards Won</p>
+            <div className="bg-card p-6 rounded-lg shadow-lg md:min-h-0 min-h-[195px] h-fit sm:w-1/2 md:w-1/3 lg:w-4/5">
+              <h2 className="text-3xl md:text-5xl font-bold text-foreground">4+</h2>
+              <p className="font-bold  md:text-xl mt-2 text-xs mb-2 text-nowrap">Industry Awards Won</p>
               <p className="text-xs">
                 Proudly recognized for our excellence and innovation.
               </p>
             </div>
-            <div className="bg-card p-6 rounded-lg shadow-lg sm:w-1/2 md:w-1/4 lg:w-1/5">
-              <h2 className="text-5xl text-foreground">10+</h2>
-              <p className="font-bold">Skilled Experts on Team</p>
-              <p className="text-xs">
+            <div className="bg-card p-6 rounded-lg shadow-lg h-fit sm:w-1/2 md:w-1/3 lg:w-4/5">
+              <h2 className="text-3xl md:text-5xl font-bold text-foreground">10+</h2>
+              <p className="font-bold  md:text-xl mt-2 text-xs mb-2 ">Skilled Experts on Team</p>
+              <p className="text-xs text-wrap">
                 A team of experts committed to driving your success.
               </p>
             </div>
           </div>
         </div>
         <div className="flex flex-col items-center justify-center p-6 bg-[#EDF2FF] rounded-3xl">
-          <div className="bg-white rounded-2xl p-7 text-center">
+          <div className="bg-white rounded-2xl p-7 text-start md:text-center">
             <h1 className="text-3xl font-semibold">
               <span className="text-blue-500 ">About</span> Us
             </h1>
-            <p className="text-[14px] w-3/4 mx-auto mb-6">
+            <p className="text-[14px] w-3/4 ml-0 md:mx-auto mb-6">
               At Dharma Tech solution, we are a team of passionate and skilled
               software engineers dedicated to crafting high-quality, innovative,
               and user-centric solutions. With a diverse range of expertise
@@ -120,7 +120,7 @@ return (
               design, and data analysis, we bring together the best minds to
               turn your ideas into reality.
             </p>
-            <div class="flex justify-center items-center ">
+            <div class="flex justify-start md:justify-center items-center ">
               <div class="flex space-x-4">
                 <button onClick={()=>redirect(2)} class="bg-black text-white px-3 py-1 rounded text-sm">
                   Read More

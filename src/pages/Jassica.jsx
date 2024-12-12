@@ -72,9 +72,9 @@ function Jassica (){
               talented and well-managed team. Highly recommended."
 
        />
-
+<div className="p-2">
        <Consult/>
-
+       </div>
 
         
       </div>

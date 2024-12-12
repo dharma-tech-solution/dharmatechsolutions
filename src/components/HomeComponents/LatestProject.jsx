@@ -134,7 +134,7 @@ function LatestPorject() {
   const change=(id)=>{
 if(id==1){
   setDiv(
-    <div className=" flex p-6 w-full flex-wrap mt-6">
+    <div className=" flex p-0 md:p-6 w-full flex-wrap mt-6">
         {arrWeb.map((item, index) => {
           return (
             <div
@@ -156,7 +156,7 @@ if(id==1){
 
 if(id==2){
   setDiv(
-    <div className=" flex p-6 w-full flex-wrap mt-6">
+    <div className=" flex p-0 md:p-6 w-full flex-wrap mt-6">
         {arrApp.map((item, index) => {
           return (
             <div
@@ -178,7 +178,7 @@ if(id==2){
 
 if(id==3){
   setDiv(
-    <div className=" flex p-6 w-full flex-wrap mt-6">
+    <div className=" flex p-0 md:p-6 w-full flex-wrap mt-6">
         {arrERP.map((item, index) => {
           return (
             <div
@@ -200,7 +200,7 @@ if(id==3){
 
 if(id==4){
   setDiv(
-    <div className=" flex p-6 w-full flex-wrap mt-6">
+    <div className=" flex p-0 md:p-6 w-full flex-wrap mt-6">
         {arrCRM.map((item, index) => {
           return (
             <div
@@ -223,7 +223,7 @@ if(id==5){
   navigate("/allprojects")
 }
   }
-  const [divs,setDiv]=useState(<div className=" flex p-6 w-full flex-wrap mt-6">
+  const [divs,setDiv]=useState(<div className=" flex p-0 md:p-6 w-full flex-wrap mt-6">
     {arrWeb.map((item, index) => {
       return (
         <div
@@ -242,14 +242,14 @@ if(id==5){
   </div>)
   return (
     <div className="p-8 bg-[#EDF2FF]">
-      <h3 className="text-lg font-semibold text-[#0040FF] text-center mb-3">
+      <h3 className="text-lg font-semibold text-[#0040FF] text-start md:text-center mb-3">
         Latest Project
       </h3>
       <div className="text-center">
-        <h3 className="text-3xl font-bold text-center mb-8">
+        <h3 className="text-xl text-nowrap md:text-3xl font-bold text-start md:text-center mb-8">
           Our Recent Launched Projects
         </h3>
-        <h3 className="text-3xl -mt-5 font-bold text-center mb-8">
+        <h3 className="text-xl md:text-3xl -mt-5 font-bold text-start md:text-center mb-8">
           Available Into Market
         </h3>
       </div>
