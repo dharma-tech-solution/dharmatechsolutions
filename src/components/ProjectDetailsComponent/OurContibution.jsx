@@ -38,12 +38,12 @@ const OurContibution = (props) => {
                 </p>
             </div>
 
-            <div className="text-white  mb-16 px-4  w-full grid grid-flow-col gap-6">
+            <div className="text-white  mb-16 px-4  w-full flex flex-col md:grid md:grid-flow-col gap-6">
                 <div className=" w-full flex flex-col justify-center">
                     <div>
                         <p className="font-bold text-white text-xl text-center mb-6">PROBLEM </p>
                         <div className="md:w-4/5 mx-auto">
-                            <p className="md:text-lg h-36 overflow-y-auto text-xs md:leading-6 text-justify">
+                            <p className="md:text-lg h-48 overflow-y-auto text-xs md:leading-6 text-justify">
                                 {problem}...
                             </p>
                             <a onClick={showfull} className="cursor-pointer md:text-sm text-xs font-semibold block text-right mt-4 underline"> {show?"Read Less":"Read More"}</a>
@@ -55,7 +55,7 @@ const OurContibution = (props) => {
                     <div>
                         <p className="font-bold text-white text-xl text-center mb-6"> SOLUTION</p>
                         <div className="md:w-4/5 mx-auto">
-                            <p className="md:text-lg h-36 overflow-y-auto text-xs md:leading-6 text-justify">
+                            <p className="md:text-lg h-48 overflow-y-auto text-xs md:leading-6 text-justify">
                                 {solution}...
                             </p>
                             <a onClick={showfullsol} className="cursor-pointer md:text-sm text-xs font-semibold block text-right mt-4 underline"> {showsol?"Read Less":"Read More"}</a>

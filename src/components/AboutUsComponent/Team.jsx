@@ -5,6 +5,10 @@ import social from "../../assets/ImageAndIcons/socialmedia.png"
 import { useNavigate } from "react-router-dom"
 function Team(){
     const navigate=useNavigate()
+    const redirect=()=>{
+        navigate("/team")
+        window.scrollTo(0, 0);
+    }
     const arr=[
         {
             img:naman,
@@ -81,7 +85,7 @@ Meet The Team
               
             </div>
             <div className="w-full h-10">
-                <button onClick={()=>navigate("/team")} className="bg-black float-end mr-10 text-white p-2 font-semibold rounded-xl">View Team</button>
+                <button onClick={()=>redirect()} className="bg-black float-end mr-10 text-white p-2 font-semibold rounded-xl">View Team</button>
 
             </div>
 

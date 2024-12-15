@@ -11,21 +11,27 @@ function Home(){
   function redirect(id){
 if(id==1){
   navigate('/')
+  window.scrollTo(0, 0);
 }
 else if(id==2){
   navigate('/about')
+  window.scrollTo(0, 0);
 }
 else if(id==3){
   navigate('/services')
+  window.scrollTo(0, 0);
 }
 else if(id==4){
   navigate('/allprojects')
+  window.scrollTo(0, 0);
 }
 else if(id==5){
   navigate('/team')
+  window.scrollTo(0, 0);
 }
 else if(id==6){
   navigate('/contact')
+  window.scrollTo(0, 0);
 }
   }
 return (

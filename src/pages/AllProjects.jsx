@@ -10,6 +10,7 @@ function AllProjects(){
   const navigate=useNavigate()
   function redirect(link){
     navigate(link)
+    window.scrollTo(0, 0);
   }
   const arrWeb = [
     {

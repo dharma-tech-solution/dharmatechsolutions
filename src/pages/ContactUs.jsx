@@ -1,71 +1,128 @@
 
+import { useState } from "react";
 import dharma from "../assets/services/dharma.png"
 import { IoCallOutline } from "react-icons/io5";
 import { MdOutlineMail } from "react-icons/md";
 import { Ri24HoursFill } from "react-icons/ri";
+import { Create_Request } from "../utils/Helper";
+import { toast, ToastContainer } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 function ContactUs(){
+  const [form,setForm]=useState({
+    name:'',
+    email:'',
+    phonenumber:'',
+    companyname:'',
+    project_type:'',
+    message:'',
+    filename:'',
+
+  })
+  const initialForm={
+    name:'',
+    email:'',
+    phonenumber:'',
+    companyname:'',
+    project_type:'',
+    message:'',
+    filename:'',
+
+  }
+  const submit=(e)=>{
+    setForm({
+      ...form,
+      [e.target.name]:e.target.value
+    })
+  }
+  async function handleSubmit(e){
+    e.preventDefault();
+    const res=await Create_Request(form)
+    if(res.message=='Request created successfully'){
+      setForm(initialForm)
+      toast.success(`Your Request Is Stored Successfully`, {
+        position: "top-center"
+      });
+    }
+    else{
+      setForm(initialForm)
+      toast.error(`Something Went Wrong try Again`, {
+        position: "top-center"
+      });
+    }
+  }
     return(
-        <div className="p-5">
+        <div className="p-5 overflow-hidden">
+          <ToastContainer />
             <div className="w-full h-full p-3 block md:flex space-x-0 md:space-x-2">
                     <div className="w-full md:w-4/6  p-2">
 
                     <h1 className="text-2xl md:text-4xl font-semibold mt-3 text-center">Get in Touch with Us</h1>
-                    <form className="mt-3 md:mt-20 p-2 md:p-10 ">
+                    <form className="mt-3 md:mt-20 p-2 md:p-10 " enctype="multipart/form-data" onSubmit={handleSubmit}>
                         <div className="flex flex-col  space-y-2">
                         <label className="text-xl font-semibold">Your Name</label>
-                        <input type="text" name='name' placeholder="Enter Your Full Name" 
-                        className="p-5 border-2 rounded-xl"
+                        <input type="text" value={form.name} name='name' placeholder="Enter Your Full Name" 
+                        className="p-3 border-2 rounded-xl"
+                        onChange={submit}
+                        required
                         />
                         </div>
 
                         <div className="flex flex-col  space-y-2 mt-10">
                         <label className="text-xl font-semibold">Enter E-Mail</label>
-                        <input type="email" name='email' placeholder="Enter Your Email Address" 
-                        className="p-5 border-2 rounded-xl"
+                        <input type="email" value={form.email} name='email' placeholder="Enter Your Email Address" 
+                        className="p-3 border-2 rounded-xl"
+                        onChange={submit}
+                        required
                         />
                         </div>
 
                         <div className="flex flex-col  space-y-2 mt-10">
                         <label className="text-xl font-semibold">Phone Number</label>
-                        <input type="email" name='email' placeholder="Enter Your Phone Number" 
-                        className="p-5 border-2 rounded-xl"
+                        <input type="text" value={form.phonenumber} name='phonenumber' placeholder="Enter Your Phone Number" 
+                        className="p-3 border-2 rounded-xl"
+                        onChange={submit}
+                        required
                         />
                         </div>
 
                         <div className="flex flex-col  space-y-2 mt-10">
                         <label className="text-xl font-semibold">Company Name</label>
-                        <input type="text" name='company' placeholder="Enter Your Company Name" 
-                        className="p-5 border-2 rounded-xl"
+                        <input type="text" value={form.companyname} name='companyname' placeholder="Enter Your Company Name" 
+                        className="p-3 border-2 rounded-xl"
+                        onChange={submit}
+                        required
                         />
                         </div>
 
                         <div className="flex flex-col  space-y-2 mt-10">
                         <label className="text-xl font-semibold">Project Type</label>
-                        <select className="p-5 border-2 rounded-xl">
-                            <option className="p-5 border-2 rounded-xl">Project Type</option>
-                            <option className="p-5 border-2 rounded-xl">Web Development</option>
-                            <option className="p-5 border-2 rounded-xl">App Development</option>
-                            <option className="p-5 border-2 rounded-xl">CRM/ERP Solutions</option>
-                            <option className="p-5 border-2 rounded-xl">E Commerce Platform</option>
-                            <option className="p-5 border-2 rounded-xl">Others</option>
+                        <select className="p-3 border-2 rounded-xl " value={form.project_type} name="project_type" onChange={submit}>
+                            <option className="p-3 border-2 rounded-xl" value="Project Type">Project Type</option>
+                            <option className="p-3 border-2 rounded-xl" value="Web Development">Web Development</option>
+                            <option className="p-3 border-2 rounded-xl" value="App Development">App Development</option>
+                            <option className="p-3 border-2 rounded-xl" value="CRM/ERP Solutions">CRM/ERP Solutions</option>
+                            <option className="p-3 border-2 rounded-xl" value="E Commerce Platform">E Commerce Platform</option>
+                            <option className="p-3 border-2 rounded-xl" value="Others">Others</option>
                         </select>
                         </div>
 
                         <div className="flex flex-col  space-y-2 mt-10">
                         <label className="text-xl font-semibold">Message / Project Details</label>
-                        <textarea className="p-5 border-2 rounded-xl" rows="10"></textarea>
+                        <textarea required className="p-3 border-2 rounded-xl" value={form.message} rows="10" name="message" onChange={submit}></textarea>
                         </div>
 
                         <div className="flex flex-col  space-y-2 mt-10">
                         <label className="text-xl font-semibold">File Attachements</label>
-                        <input type="file" name='file'
-                        className="p-5 border-2 rounded-xl"
+                        <input type="file" name='filename' value={form.filename} accept=".pdf"
+                        className="p-3 border-2 rounded-xl"
+                        onChange={submit}
+                        required
                         />
                         </div>
 
                         <div className="flex space-x-3 mt-10 md:justify-start justify-center">
-                        <button className="px-8 py-3 rounded-md text-white bg-blue-600">Submit</button>
-                        <button className="px-8 py-3 rounded-md text-white bg-slate-600">Reset</button>
+                        <button type="submit" className="px-8 py-3 rounded-md text-white bg-blue-600">Submit</button>
+                        <button type="button" onClick={()=>setForm(initialForm)} className="px-8 py-3 rounded-md text-white bg-slate-600">Reset</button>
                         
                         </div>
                     </form>

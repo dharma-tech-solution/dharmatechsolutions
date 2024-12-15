@@ -17,7 +17,7 @@ const AboutProject =(props)=>{
 
           <div className=" grid grid-flow-row md:grid-flow-col items-center w-full px-4 md:px-10">
             <div className=" grid grid-flow-col my-10">
-              <div className="flex items-center text-center justify-center">
+              <div className="flex items-center justify-center">
                 <div className="">
                   <img className="w-24" src={props.img1} alt="Smooth Navigation" />
                   <p className="text-white text-sm mt-2">

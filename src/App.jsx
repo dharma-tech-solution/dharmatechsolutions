@@ -11,6 +11,7 @@ import UrbonStudio from './pages/UrbonStudio';
 import Jassica from './pages/Jassica';
 import Services from './pages/Services';
 import ContactUs from './pages/ContactUs';
+import HomeHorizons from './pages/HomeHorizons';
 export default function Widget() {
   return (
     <Router>
@@ -26,6 +27,7 @@ export default function Widget() {
       <Route path="/jessica" element={<Jassica/>} />
       <Route path="/services" element={<Services/>} />
       <Route path="/contact" element={<ContactUs/>} />
+      <Route path="/homehorizons" element={<HomeHorizons/>} />
         </Routes>
         <Fotter />
     </Router>

@@ -1,4 +1,10 @@
+import { useNavigate } from "react-router-dom";
 function Blackbanner() {
+  const navigate=useNavigate()
+  const redirect=()=>{
+navigate("/contact")
+window.scrollTo(0, 0);
+  }
   return (
     <div className="mt-12 bg-black text-white p-10 rounded-lg text-wrap w-full mx-auto">
       <h1 className="text-wrap text-center text-sm">
@@ -11,7 +17,7 @@ function Blackbanner() {
       </h1>
 
       <center>
-        <button className="bg-white mt-3 text-black p-2 rounded-lg text-xs">
+        <button onClick={redirect} className="bg-white mt-3 text-black p-2 rounded-lg text-xs">
           Request a Free Consultation
         </button>
       </center>

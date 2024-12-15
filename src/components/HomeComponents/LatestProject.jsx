@@ -2,6 +2,9 @@ import Pawsitive from "../../assets/ImageAndIcons/PawsitiveIMG.png";
 import UrbanStudio from "../../assets/ImageAndIcons/urbanStudioIMG.png";
 import JesicaFlat from "../../assets/ImageAndIcons/jasicaflatIMG.png";
 import SolarCRM from "../../assets/ImageAndIcons/solarCRmIMG.png";
+import Property from "../../assets/Property/property_project.png"
+import Fashion from "../../assets/Male_Fashion/man_fashion_project.png"
+import travelers from "../../assets/Fantacy_Travelers/fantacy_travelers_project.png"
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -9,6 +12,7 @@ function LatestPorject() {
   const navigate=useNavigate()
   function redirect(link){
     navigate(link)
+    window.scrollTo(0, 0);
   }
  
   const arrWeb = [
@@ -38,6 +42,27 @@ function LatestPorject() {
       name: "WEB-Solar CRM - Powering Solar Panel Sales And Installation",
       discription:
         "Book your perfect stay with ease , from room options to local experiences , all in one place",
+        link:'/petcare'
+    },
+    {
+      img: Property,
+      name: "Home Horizons - Where Dreams Find Their Address.",
+      discription:
+        "Home Horizons connects buyers and sellers with trusted real estate solutions, offering seamless property transactions and dream home discoveries",
+        link:'/homehorizons'
+    },
+    {
+      img: Fashion,
+      name: "Metro Man - Redefining Style, One Man at a Time.",
+      discription:
+        "Metro Man delivers trendy, sophisticated fashion essentials, empowering men to look sharp and confident daily",
+        link:'/petcare'
+    },
+    {
+      img: travelers,
+      name: "Voyage Vista - Discover New Horizons, One Journey at a Time.",
+      discription:
+        "Voyage Vista inspires unforgettable adventures, offering seamless travel planning for explorers seeking new horizons worldwide",
         link:'/petcare'
     },
   ];
@@ -134,16 +159,16 @@ function LatestPorject() {
   const change=(id)=>{
 if(id==1){
   setDiv(
-    <div className=" flex p-0 md:p-6 w-full flex-wrap mt-6">
+    <div className=" grid grid-cols-1 md:grid-cols-4 p-0 md:p-6 w-full   mt-6">
         {arrWeb.map((item, index) => {
           return (
             <div
             onClick={()=>redirect(item.link)}
               key={index}
-              className="w-[240px] ml-5 mt-3 p-4 bg-white rounded-2xl cursor-pointer"
+              className="w-[240px] ml-5 mt-3  p-4 bg-white rounded-2xl cursor-pointer"
             >
               <div className="bg-[#d7d9df9e] p-2 rounded-2xl grid h-52 place-items-center">
-                <img src={item.img} className="h-46" />
+                <img src={item.img} className="h-48" />
               </div>
               <h2 className="font-bold text-[12px] mt-2 " >{item.name}</h2>
               <h2 className="text-[10px] mt-2">{item.discription}</h2>
@@ -156,7 +181,7 @@ if(id==1){
 
 if(id==2){
   setDiv(
-    <div className=" flex p-0 md:p-6 w-full flex-wrap mt-6">
+    <div className=" grid grid-cols-1 md:grid-cols-4 p-0 md:p-6 w-full  mt-6">
         {arrApp.map((item, index) => {
           return (
             <div
@@ -165,7 +190,7 @@ if(id==2){
               className="w-[240px] ml-5 mt-3 p-4 bg-white rounded-2xl cursor-pointer"
             >
               <div className="bg-[#d7d9df9e] p-2 rounded-2xl grid h-52 place-items-center">
-                <img src={item.img} className="h-46" />
+                <img src={item.img} className="h-48" />
               </div>
               <h2 className="font-bold text-[12px] mt-2 " >{item.name}</h2>
               <h2 className="text-[10px] mt-2">{item.discription}</h2>
@@ -178,7 +203,7 @@ if(id==2){
 
 if(id==3){
   setDiv(
-    <div className=" flex p-0 md:p-6 w-full flex-wrap mt-6">
+    <div className=" grid grid-cols-1 md:grid-cols-4 p-0 md:p-6 w-full  mt-6">
         {arrERP.map((item, index) => {
           return (
             <div
@@ -187,7 +212,7 @@ if(id==3){
               className="w-[240px] ml-5 mt-3 p-4 bg-white rounded-2xl cursor-pointer"
             >
               <div className="bg-[#d7d9df9e] p-2 rounded-2xl grid h-52 place-items-center">
-                <img src={item.img} className="h-46" />
+                <img src={item.img} className="h-48" />
               </div>
               <h2 className="font-bold text-[12px] mt-2 " >{item.name}</h2>
               <h2 className="text-[10px] mt-2">{item.discription}</h2>
@@ -200,7 +225,7 @@ if(id==3){
 
 if(id==4){
   setDiv(
-    <div className=" flex p-0 md:p-6 w-full flex-wrap mt-6">
+    <div className=" grid grid-cols-1 md:grid-cols-4 p-0 md:p-6 w-full  mt-6">
         {arrCRM.map((item, index) => {
           return (
             <div
@@ -209,7 +234,7 @@ if(id==4){
               className="w-[240px] ml-5 mt-3 p-4 bg-white rounded-2xl cursor-pointer"
             >
               <div className="bg-[#d7d9df9e] p-2 rounded-2xl grid h-52 place-items-center">
-                <img src={item.img} className="h-46" />
+                <img src={item.img} className="h-48" />
               </div>
               <h2 className="font-bold text-[12px] mt-2 " >{item.name}</h2>
               <h2 className="text-[10px] mt-2">{item.discription}</h2>
@@ -223,7 +248,7 @@ if(id==5){
   navigate("/allprojects")
 }
   }
-  const [divs,setDiv]=useState(<div className=" flex p-0 md:p-6 w-full flex-wrap mt-6">
+  const [divs,setDiv]=useState(<div className=" grid grid-cols-1 md:grid-cols-4 p-0 md:p-6 w-full  mt-6">
     {arrWeb.map((item, index) => {
       return (
         <div
@@ -232,7 +257,7 @@ if(id==5){
           className="w-[240px] ml-5 mt-3 p-4 bg-white rounded-2xl cursor-pointer"
         >
           <div className="bg-[#d7d9df9e] p-2 rounded-2xl grid h-52 place-items-center">
-            <img src={item.img} className="h-46" />
+            <img src={item.img} className="h-48" />
           </div>
           <h2 className="font-bold text-[12px] mt-2 " >{item.name}</h2>
           <h2 className="text-[10px] mt-2">{item.discription}</h2>
